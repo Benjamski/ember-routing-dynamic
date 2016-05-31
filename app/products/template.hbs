@@ -1,10 +1,21 @@
 {{!-- {{outlet}} --}}
 <!-- app/products/template.hbs -->
 
-<!-- {{outlet}} -->
+
+
+{{!-- <h2> Product Listings </h2>
+<ul>
+  {{#each model as |product|}}
+    {{#link-to 'product' product tagName='li'}} {{product.name}} {{/link-to}}
+  {{/each}}
+</ul> --}}
+
+
 <h2> Product Listings </h2>
 <ul>
-{{#each model as |product|}}
-  <li>{{product.name}}</li>
-{{/each}}
+  {{#each model as |product|}}
+    {{#link-to 'product' product tagName='li'}} {{product.name}} {{/link-to}}
+  {{/each}}
 </ul>
+
+{{!-- items ARE clickable, they just dont appear as clickable wihtout <a> --}}
