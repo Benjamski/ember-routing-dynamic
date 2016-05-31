@@ -13,6 +13,7 @@ Router.map(function() {
     this.route('leadership');
     this.route('sales');
   });
+  this.route('products');
 });
 
 export default Router;

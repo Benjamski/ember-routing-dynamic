@@ -1,0 +1,10 @@
+{{!-- {{outlet}} --}}
+<!-- app/products/template.hbs -->
+
+<!-- {{outlet}} -->
+<h2> Product Listings </h2>
+<ul>
+{{#each model as |product|}}
+  <li>{{product.name}}</li>
+{{/each}}
+</ul>
